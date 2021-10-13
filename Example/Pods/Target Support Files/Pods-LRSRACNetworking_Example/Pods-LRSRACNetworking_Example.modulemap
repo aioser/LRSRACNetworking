@@ -1,0 +1,6 @@
+framework module Pods_LRSRACNetworking_Example {
+  umbrella header "Pods-LRSRACNetworking_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

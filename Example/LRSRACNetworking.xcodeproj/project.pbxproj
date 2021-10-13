@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0E4632D5F9D562CFAD8C6745 /* Pods-LRSRACNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRSRACNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-LRSRACNetworking_Example/Pods-LRSRACNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1807D03DA24C135A856875A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1807D03DA24C135A856875A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		23073F8A23A22C44113C5935 /* Pods-LRSRACNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRSRACNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-LRSRACNetworking_Tests/Pods-LRSRACNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2ABE95462D031EF87F29B901 /* LRSRACNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LRSRACNetworking.podspec; path = ../LRSRACNetworking.podspec; sourceTree = "<group>"; };
+		2ABE95462D031EF87F29B901 /* LRSRACNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LRSRACNetworking.podspec; path = ../LRSRACNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3370083B6AC1DC96DD309E3E /* Pods-LRSRACNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRSRACNetworking_Example.release.xcconfig"; path = "Target Support Files/Pods-LRSRACNetworking_Example/Pods-LRSRACNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4B13262A5D0E4D3AF518B32B /* Pods-LRSRACNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRSRACNetworking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LRSRACNetworking_Tests/Pods-LRSRACNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LRSRACNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRSRACNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3205BCFFF6C7944035976CD /* Pods_LRSRACNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRSRACNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD1B6B06F1F9C5187CAA344E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BD1B6B06F1F9C5187CAA344E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF473A13D8BD8B5EFB7F543A /* Pods_LRSRACNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRSRACNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				4B13262A5D0E4D3AF518B32B /* Pods-LRSRACNetworking_Tests.debug.xcconfig */,
 				23073F8A23A22C44113C5935 /* Pods-LRSRACNetworking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,11 +347,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LRSRACNetworking_Example/Pods-LRSRACNetworking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/LRSNetworking/LRSNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/LRSRACNetworking/LRSRACNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LRSNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LRSRACNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

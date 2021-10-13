@@ -1,0 +1,6 @@
+framework module LRSNetworking {
+  umbrella header "LRSNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}
